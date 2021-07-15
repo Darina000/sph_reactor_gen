@@ -12,6 +12,7 @@ public:
         
         std::ofstream outf("/Users/darazemlanskaa/Documents/Geant4_pr/snow/reactor_2/run1.mac", std::ios::app);
         outf << "/gun/particle e-"  << std::endl;
+        outf << "/gun/direction " << position.getX() << " " << position.getY() << " " << position.getZ() << std::endl;
         outf << "/gun/energy " << energy << " keV"<< std::endl;
         outf << "/run/beamOn 1"<< std::endl;
         
